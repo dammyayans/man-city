@@ -17,7 +17,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
-  "homepage": "http://man_city.com/",
+  "homepage": "https://dammyayans.github.io/man-city",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
