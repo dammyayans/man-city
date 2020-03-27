@@ -119,9 +119,9 @@ export default class TheMatches extends Component {
 
             <MatchesList matches={state.filterMatches} />
           </div>
-        </div>
-        <div className="right">
-          <LeagueTable />
+          <div className="right">
+            <LeagueTable />
+          </div>
         </div>
       </div>
     );
