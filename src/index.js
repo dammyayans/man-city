@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Route from "./Route";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./Resources/css/app.css";
 import { firebase } from "./firebase";
 
 const App = props => {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Route {...props} />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 firebase.auth().onAuthStateChanged(user => {
