@@ -4,13 +4,13 @@ import "firebase/database";
 import "firebase/auth";
 import "firebase/storage";
 const config = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
+  apiKey: "AIzaSyArWH45m1mCLyy2PJL_mzA1B_e1xaW2oKE",
+  authDomain: "m-city-3f6e2.firebaseapp.com",
   databaseURL: "https://m-city-3f6e2.firebaseio.com",
   projectId: "m-city-3f6e2",
   storageBucket: "m-city-3f6e2.appspot.com",
   messagingSenderId: "546826408859",
-  appId: process.env.APP_ID,
+  appId: "1:546826408859:web:20893770da36376003c73e",
   measurementId: "G-Z6MT3ZX4LH"
 };
 firebase.initializeApp(config);
