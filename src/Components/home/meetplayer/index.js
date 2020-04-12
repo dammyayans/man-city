@@ -25,11 +25,12 @@ class MeetPlayers extends Component {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "flex-start",
+                    justifyContent: "space-between",
                   }}
                 >
                   <Tag
                     bck="#0e1731"
-                    size="6rem"
+                    size="5.7rem"
                     color="#ffffff"
                     add={{
                       marginBottom: "20px",
@@ -39,7 +40,7 @@ class MeetPlayers extends Component {
                   </Tag>
                   <Tag
                     bck="#0e1731"
-                    size="6rem"
+                    size="5.7rem"
                     color="#ffffff"
                     add={{
                       marginBottom: "20px",
@@ -49,7 +50,7 @@ class MeetPlayers extends Component {
                   </Tag>
                   <Tag
                     bck="#0e1731"
-                    size="6rem"
+                    size="5.7rem"
                     color="#ffffff"
                     add={{
                       marginBottom: "20px",

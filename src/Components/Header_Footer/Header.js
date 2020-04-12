@@ -20,7 +20,7 @@ export class Header extends Component {
         <Toolbar style={{ display: "flex" }}>
           <div style={{ flexGrow: 1 }}>
             <div className="header_logo">
-              <CityLogo links="true" linkTo="/" width="70px" height="70px" />
+              <CityLogo links="true" linkTo="/" width="75px" height="75px" />
             </div>
           </div>
           <Link to="/the_team">
