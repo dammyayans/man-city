@@ -5,7 +5,7 @@ import Reveal from "react-reveal/Reveal";
 import HomeCards from "./Cards";
 class MeetPlayers extends Component {
   state = {
-    show: false
+    show: false,
   };
   render() {
     return (
@@ -20,36 +20,39 @@ class MeetPlayers extends Component {
                 <HomeCards show={this.state.show} />
               </div>
               <div className="home_text_wrapper">
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                  }}
+                >
                   <Tag
                     bck="#0e1731"
-                    size="100px"
+                    size="6rem"
                     color="#ffffff"
                     add={{
-                      display: "inline-block",
-                      marginBottom: "20px"
+                      marginBottom: "20px",
                     }}
                   >
                     Meet
                   </Tag>
                   <Tag
                     bck="#0e1731"
-                    size="100px"
+                    size="6rem"
                     color="#ffffff"
                     add={{
-                      display: "inline-block",
-                      marginBottom: "20px"
+                      marginBottom: "20px",
                     }}
                   >
                     The
                   </Tag>
                   <Tag
                     bck="#0e1731"
-                    size="100px"
+                    size="6rem"
                     color="#ffffff"
                     add={{
-                      display: "inline-block",
-                      marginBottom: "20px"
+                      marginBottom: "20px",
                     }}
                   >
                     Players
@@ -57,10 +60,11 @@ class MeetPlayers extends Component {
                   <div>
                     <Tag
                       bck="#ffffff"
+                      size="24px"
                       add={{
                         display: "inline-block",
                         marginBottom: "27px",
-                        border: "1px solid #0e1731"
+                        border: "1px solid #0e1731",
                       }}
                       color="#0e1731"
                       links={true}

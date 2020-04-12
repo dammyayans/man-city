@@ -9,21 +9,21 @@ export default class HomeCards extends Component {
     cards: [
       {
         bottom: 90,
-        left: 300
+        left: 300,
       },
       {
         bottom: 60,
-        left: 200
+        left: 200,
       },
       {
         bottom: 30,
-        left: 100
+        left: 100,
       },
       {
         bottom: 0,
-        left: 0
-      }
-    ]
+        left: 0,
+      },
+    ],
   };
   showAnimateCards = () =>
     this.state.cards.map((card, i) => (
@@ -32,12 +32,12 @@ export default class HomeCards extends Component {
         show={this.props.show}
         start={{
           left: 0,
-          bottom: 0
+          bottom: 0,
         }}
         enter={{
           left: [card.left],
           bottom: [card.bottom],
-          timing: { duration: 500, ease: easePolyOut }
+          timing: { duration: 500, ease: easePolyOut },
         }}
       >
         {({ left, bottom }) => {

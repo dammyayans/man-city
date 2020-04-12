@@ -15,18 +15,18 @@ export default class Enroll extends Component {
         config: {
           name: "email_input",
           type: "email",
-          placeholder: "Enter your email"
+          placeholder: "Enter your email",
         },
         validation: {
           required: true,
-          email: true
+          email: true,
         },
         valid: false,
-        validationMessage: ""
-      }
-    }
+        validationMessage: "",
+      },
+    },
   };
-  updateForm = element => {
+  updateForm = (element) => {
     const newFormdata = { ...this.state.formdata };
     const newElement = { ...newFormdata[element.id] };
     newElement.value = element.e.target.value;
@@ -37,7 +37,7 @@ export default class Enroll extends Component {
     newFormdata[element.id] = newElement;
     this.setState({
       formError: false,
-      formdata: newFormdata
+      formdata: newFormdata,
     });
   };
   resetFormSuccess(type) {
@@ -50,7 +50,7 @@ export default class Enroll extends Component {
     this.setState({
       formError: false,
       formdata: newFormdata,
-      formSuccess: type ? "Congratulations" : "already on the database"
+      formSuccess: type ? "Congratulations" : "already on the database",
     });
     console.log(this.state.formSuccess);
     this.clearSuccessMessage();
@@ -58,7 +58,7 @@ export default class Enroll extends Component {
   clearSuccessMessage() {
     setTimeout(() => {
       this.setState({
-        formSuccess: ""
+        formSuccess: "",
       });
     }, 2000);
   }
@@ -76,7 +76,7 @@ export default class Enroll extends Component {
         .orderByChild("email")
         .equalTo(dataToSubmit.email)
         .once("value")
-        .then(snapshot => {
+        .then((snapshot) => {
           if (snapshot.val() === null) {
             //means it's not on the database
             firebasePromotions.push(dataToSubmit);
@@ -88,7 +88,7 @@ export default class Enroll extends Component {
       //   this.resetFormSuccess();
     } else {
       this.setState({
-        formError: true
+        formError: true,
       });
     }
   }
@@ -97,24 +97,21 @@ export default class Enroll extends Component {
     return (
       <Fade>
         <div className="enroll_wrapper">
-          <form onSubmit={e => this.submitForm(e)}>
+          <form onSubmit={(e) => this.submitForm(e)}>
             <div className="enroll_title">Enter your Email</div>
             <div className="enroll_input">
               <FormField
                 id={"email"}
                 formdata={this.state.formdata.email}
-                change={element => this.updateForm(element)}
+                change={(element) => this.updateForm(element)}
               />
               {this.state.formError ? (
                 <div className="error_label">Something is wrong, try again</div>
               ) : null}
               <div className="success_label">{this.state.formSuccess}</div>
-              <button onClick={e => this.submitForm(e)}>Enroll</button>
+              <button onClick={(e) => this.submitForm(e)}>Enroll</button>
               <div className="enroll_discl">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Tempore, blanditiis veritatis aliquid exercitationem vitae atque
-                aliquam molestiae sit ea voluptates placeat assumenda, id illo
-                quaerat fugit nisi fuga architecto consequatur!
+                For more updates for promotions enroll!
               </div>
             </div>
           </form>

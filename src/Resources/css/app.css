@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -15,6 +16,7 @@ a {
 
 .bck_blue {
     background: #0d1831;
+
 }
 
 .bck_lblue {
@@ -26,8 +28,7 @@ a {
 }
 
 .container {
-    width: 1024px;
-    margin: 0 auto;
+    margin: 0 24px
 }
 
 input {
@@ -194,14 +195,14 @@ footer .footer_discl {
 }
 
 .featured_number {
-    font-size: 270px;
+    font-size: 15rem;
     color: #ffffff;
     transform: translate(260px, 170px);
     position: absolute;
 }
 
 .featured_player {
-    width: 500px;
+    width: 26rem;
     height: 500px;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -212,7 +213,7 @@ footer .footer_discl {
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 92px;
+    font-size: 4.6rem;
     text-transform: uppercase;
     padding: 0px 20px;
 }
@@ -221,7 +222,7 @@ footer .footer_discl {
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 92px;
+    font-size: 4.6rem;
     text-transform: uppercase;
     padding: 0px 20px;
 }
@@ -237,13 +238,13 @@ footer .footer_discl {
 }
 
 .home_matches_wrapper .home_matches {
-    flex-wrap: wrap;
-    display: flex;
+    /* flex-wrap: wrap;
+    display: flex; */
     margin-top: 60px;
 }
 
 .home_matches_wrapper .home_matches .item {
-    width: 50%;
+    width: 100%;
     margin: 35px 0px;
 }
 
@@ -408,18 +409,18 @@ footer .footer_discl {
 .home_meetplayers_wrapper {
     padding-bottom: 100px;
     min-height: 600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .home_meetplayers .home_card_wrapper {
     position: relative;
-    float: left;
-    width: 630px;
-    min-height: 600px;
+    flex: 2;
 }
 
 .home_meetplayers .home_text_wrapper {
-    float: right;
-    width: 390px;
+    flex: 1;
 }
 
 /*=============================
@@ -430,9 +431,10 @@ footer .footer_discl {
 .player_card_wrapper {
     background: #ffffff;
     border: 1px solid #ececec;
-    width: 300px;
+    width: 140%;
     padding: 10px 10px 20px 10px;
     font-family: 'Righteous';
+    box-sizing: border-box;
 }
 
 .player_card_wrapper .player_card_thmb {
@@ -450,7 +452,7 @@ footer .footer_discl {
 
 .player_card_wrapper .player_card_number {
     color: #d6ecfe;
-    font-size: 185px;
+    font-size: 156px;
     text-align: right;
     line-height: 160px;
 }
@@ -476,18 +478,19 @@ footer .footer_discl {
 ===============================*/
 
 .promotion_wrapper {
-    padding: 30px 0px 130px 0px;
+    padding: 30px 0px 96px 0px;
 }
 
 .promotion_wrapper .promotion_animation {
     display: flex;
     padding: 80px 0px 30px 0px;
+
 }
 
 .promotion_wrapper .promotion_animation .left {
     text-transform: uppercase;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 9rem;
     font-family: 'Righteous', cursive;
     flex-grow: 1;
     color: #d5ebfd;
@@ -503,7 +506,7 @@ footer .footer_discl {
 }
 
 .promotion_wrapper .promotion_animation .right div {
-    width: 280px;
+    width: 18rem;
     height: 280px;
     background-size: contain !important;
 }
@@ -520,7 +523,7 @@ footer .footer_discl {
 
 .promotion_wrapper .enroll_discl {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 18px;
     width: 271px;
     margin: 0 auto;
     padding: 10px 0px;

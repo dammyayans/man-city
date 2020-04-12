@@ -14,7 +14,7 @@ export class Header extends Component {
           backgroundColor: "#98C5E9",
           boxShadow: "none",
           padding: "10px 0",
-          borderBottom: "2px solid #00285e"
+          borderBottom: "2px solid #00285e",
         }}
       >
         <Toolbar style={{ display: "flex" }}>
@@ -24,10 +24,14 @@ export class Header extends Component {
             </div>
           </div>
           <Link to="/the_team">
-            <Button color="inherit">The Team</Button>
+            <Button color="inherit" style={{ fontSize: 18 }}>
+              The Team
+            </Button>
           </Link>
           <Link to="/the_matches">
-            <Button color="inherit">Matches</Button>
+            <Button color="inherit" style={{ fontSize: 18 }}>
+              Matches
+            </Button>
           </Link>
         </Toolbar>
       </Appbar>
